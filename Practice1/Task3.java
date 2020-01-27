@@ -7,26 +7,26 @@ class Task3{
         System.out.print("Enter second number ");
         int b = sc.nextInt();
         int n=0;
-        //searching for lowest commmon denomiator
-        if (a > b) {
-            if ((a % b) == 0) {
-                n = b;
-            }
-            else {
-                a = a % b;
-            }
-        }
-        else {
-            if ((b % a) == 0) {
-                n = a;
-            }
-            else {
-                b = b % a;
-            }
-        }
+        //searching for greatest common divisor
+         if (a > b){
+                    if (a % b == 0){
+                        n = a;
+                    }
+                    else {
+                        n = a * b;
+                    }
+                }
+                else {
+                    if (b % a == 0){
+                        n = b;
+                    }
+                    else {
+                        n = a * b;
+                    }
+                }
         //searching for lowest common multiply
         int k = (a * b) / n;
         System.out.println("nod = "+n);
-        System.out.print("nok= "+k);
+       System.out.print("nok= "+k);
     }
 }
