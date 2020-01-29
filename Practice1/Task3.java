@@ -7,26 +7,20 @@ class Task3{
         System.out.print("Enter second number ");
         int b = sc.nextInt();
         int n=0;
+        int h = a * b;
         //searching for greatest common divisor
-         if (a > b){
-                    if (a % b == 0){
-                        n = a;
-                    }
-                    else {
-                        n = a * b;
-                    }
-                }
-                else {
-                    if (b % a == 0){
-                        n = b;
-                    }
-                    else {
-                        n = a * b;
-                    }
-                }
+        while ((a != 0) && (b != 0)){
+            if (a > b) {
+                a = a % b;
+            }
+            else {
+                b = b % a;
+            }
+        }
+        n = a + b;
         //searching for lowest common multiply
-        int k = (a * b) / n;
+        int k  = h/n;
         System.out.println("nod = "+n);
-       System.out.print("nok= "+k);
+        System.out.print("nok = "+k);
     }
 }
