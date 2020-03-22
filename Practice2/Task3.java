@@ -5,25 +5,25 @@ class Task3 {
         System.out.println("How much elements in massive will we have? ");
         int k = sc.nextInt();
         int res = 0;
-        //mass creating
+        //СОЗДАНИЕ МАССИВА
         int [] elem = new int[k];
 
-        //enter to mass
+        //ВВОД ЧИСЕЛ В МАССИВ
         System.out.println("Enter elements ");
         for (int i = 0; i < elem.length; i++) {
             elem[i] = sc.nextInt();
         }
 
-        //gcd finding
+        //ПОИСК НОД
 
         for (int i = 0; i < k - 1; i++) {
                 res = nod(elem[i], elem[i + 1]);
             }
-        //result
+        //РЕЗУЛЬТАТ
         System.out.print("GCD = " + res);
     }
 
-    //gcd function
+    //ФУНКЦИЯ НОД
     public static int nod(int a, int b) {
         while ((a != 0) && (b != 0)){
             if (a > b) {
@@ -35,6 +35,4 @@ class Task3 {
         }
         return a + b;
     }
-
-
 }
