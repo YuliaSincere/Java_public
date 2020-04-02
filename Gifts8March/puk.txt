@@ -1,0 +1,19 @@
+hi. there are the items you can buy. we choose the quantity not the quality
+
+
+Haughty Cat,10
+Agressive Cat,20
+Dangerous Cat,30
+Ferocious Cat,40
+Impudent Cat,50
+
+
+and we will create groceryList for you
+
+Grocery list for fuck
+
+Haughty Cat
+
+Agressive Cat
+
+Dangerous Cat
